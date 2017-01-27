@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="TestApp">
+<head>
+  <meta charset="utf-8">
+  <script src="angular.min.js"></script>
+  <script src="app.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Lunch Checker</title>
+</head>
+<body ng-controller="TestController">
+<h1>Lunch Checker</h1>
+  <div>
+    Your lunch menu is:
+    <input type="text"
+           placeholder = "list comma separated dishes you usually have for lunch"
+           ng-model="lunchlist">
+  </div>
+  <div>
+  <button ng-click="displayRecomendation()">
+      Check if too much
+  </button>
+  </div>
+  <br>
+  <div class="good">
+    {{resolution}}
+  </div>
+
+  <div class="error">
+    {{nodata}}
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+body {
+  font-size: 1.2em;
+}
+
+.good {
+  color: chartreuse;
+}
+
+.error {
+  color: red;
+}
+
